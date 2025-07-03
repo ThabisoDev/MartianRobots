@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarianRobots.Core", "MarianRobots.Core\MarianRobots.Core.csproj", "{5277BE6A-A368-43AE-950F-AF98101E650E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarianRobots.App", "MarianRobots.App\MarianRobots.App.csproj", "{FE69CD4A-C253-4DC9-AC2A-6AC474AFC758}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarianRobots.Tests", "MarianRobots.Tests\MarianRobots.Tests.csproj", "{308A553A-BC8F-49AC-A517-F92ED81B0255}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5277BE6A-A368-43AE-950F-AF98101E650E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5277BE6A-A368-43AE-950F-AF98101E650E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5277BE6A-A368-43AE-950F-AF98101E650E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5277BE6A-A368-43AE-950F-AF98101E650E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE69CD4A-C253-4DC9-AC2A-6AC474AFC758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE69CD4A-C253-4DC9-AC2A-6AC474AFC758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE69CD4A-C253-4DC9-AC2A-6AC474AFC758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE69CD4A-C253-4DC9-AC2A-6AC474AFC758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{308A553A-BC8F-49AC-A517-F92ED81B0255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{308A553A-BC8F-49AC-A517-F92ED81B0255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{308A553A-BC8F-49AC-A517-F92ED81B0255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{308A553A-BC8F-49AC-A517-F92ED81B0255}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B78EF77C-632A-4738-8EB6-96CC3369CDD4}
+	EndGlobalSection
+EndGlobal
