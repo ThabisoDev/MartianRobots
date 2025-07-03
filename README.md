@@ -1,48 +1,48 @@
-﻿# 🪐 Martian Robots Challenge (C# Solution)
+﻿# 🪐 Martian Robots (C# Solution)
 
-This project provides a complete solution to the **Martian Robots** coding challenge using C# and .NET. It simulates robot movement on a Mars-like grid, accounting for orientation, movement instructions, and boundary conditions.
+![CI](https://github.com/ThabisoDev/MartianRobots/actions/workflows/dotnet.yml/badge.svg)
+![License](https://img.shields.io/github/license/ThabisoDev/MartianRobots)
+![.NET](https://img.shields.io/badge/.NET-6.0-blue)
+![Tests](https://img.shields.io/badge/tests-xUnit%20✔️-success)
 
----
-
-## 📖 Problem Summary
-
-- The Mars surface is modeled as a rectangular grid (e.g., `5 3`)
-- Each robot is given:
-  - A start coordinate and orientation (e.g., `1 1 E`)
-  - A series of instructions (e.g., `RFRFRFRF`)
-- Instructions include:
-  - `L`: turn left 90°
-  - `R`: turn right 90°
-  - `F`: move forward
-- If a robot moves off the grid, it is **LOST** and leaves a **scent** at its last position.
-- Future robots will **ignore instructions** that would lead them off the grid from a scented position.
+> A clean, test-driven C# simulation for the **Martian Robots** coding challenge. Includes a modular design, xUnit tests, and full instructions.
 
 ---
 
-## 🧱 Solution Structure
+## 📦 Project Structure
 
+```plaintext
 MartianRobots.sln
-├── MartianRobots.App # Console app to run simulation
-├── MartianRobots.Core # Logic (models, services, enums)
-├── MartianRobots.Tests # xUnit test project
-└── README.md
+├── MartianRobots.App       # Console app entry point
+├── MartianRobots.Core      # Logic, models, services
+├── MartianRobots.Tests     # Unit tests using xUnit
+├── input.txt               # Sample input for the app
+└── .github/workflows       # GitHub Actions CI workflow
+🧠 Problem Description
+Mars is a grid defined by its upper-right coordinates (e.g. 5 3)
 
+Each robot has a:
 
----
+Start position + orientation (X Y D)
 
-## 🧪 How to Run Tests
+Instruction string (L, R, F)
 
-Use Visual Studio Test Explorer or CLI:
+Rules:
 
-```bash
-dotnet test MartianRobots.Tests
+If a robot moves off the grid, it is LOST
 
-🚀 How to Run the App
+LOST robots leave a scent at their last position
+
+Future robots ignore moves that would make them LOST from a scented position
+
+💻 How to Run the Console App
+Open the solution in Visual Studio 2022
+
 Set MartianRobots.App as the startup project
 
-Create a text file named input.txt in the project folder with the following content:
+Add content to input.txt in the App project folder, e.g.:
 
-mathematica
+text
 Copy
 Edit
 5 3
@@ -52,28 +52,63 @@ RFRFRFRF
 FRRFLLFFRRFLL
 0 3 W
 LLFFFLFLFL
-In Program.cs, read and parse the input.txt
+Press Ctrl+F5 to run
 
-Press F5 to run
+✅ Example Output
+text
+Copy
+Edit
+1 1 E
+3 3 N LOST
+2 3 S
+🧪 How to Run Tests
+Run tests using Visual Studio Test Explorer or the CLI:
 
+bash
+Copy
+Edit
+dotnet test MartianRobots.Tests
+Test cases to implement:
 
-🔧 Technologies Used
-C# (.NET 6 or .NET 8)
+Robots survive edge cases
 
-xUnit for testing
+Robots get marked as LOST
 
-Object-oriented design
+Scent prevents repeated losses
+
+🔄 Continuous Integration (CI)
+GitHub Actions runs every time you push to main.
+
+✅ The workflow:
+
+Restores packages
+
+Builds the solution
+
+Runs all tests
+
+View the CI status here:
+👉 GitHub Actions
+
+📈 Future Improvements
+CLI argument for input file
+
+JSON or YAML input support
+
+API wrapper or web frontend
+
+Roslyn analyzer for invalid moves
+
+🧰 Technologies Used
+C# (.NET 6 / .NET 8)
+
+xUnit
 
 Visual Studio 2022
 
-📈 Future Improvements
-Support for additional instruction types
+GitHub Actions
 
-JSON input/output support
+OOP Design Patterns
 
-Web or API-based interface
-
-Input validation and error handling
-
-📜 License
-MIT
+📄 License
+This project is licensed under the MIT License.
