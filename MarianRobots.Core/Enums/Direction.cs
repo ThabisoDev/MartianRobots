@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace MarianRobots.Core.Enums
 {
-    internal class Direction
+    public enum Direction
     {
+        N,
+        E,
+        S,
+        W
     }
 }
