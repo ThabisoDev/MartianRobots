@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflow", "workflow", "{E3E81B42-B75A-4804-83AD-1957D42B1A27}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{81E19EBC-B5C5-41EA-B3CE-19C1D5CBE17B}"
 	ProjectSection(SolutionItems) = preProject
 		dotnet.yml = dotnet.yml
 	EndProjectSection
@@ -46,7 +46,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E3E81B42-B75A-4804-83AD-1957D42B1A27} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{81E19EBC-B5C5-41EA-B3CE-19C1D5CBE17B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B78EF77C-632A-4738-8EB6-96CC3369CDD4}
